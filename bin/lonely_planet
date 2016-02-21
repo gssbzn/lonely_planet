@@ -17,9 +17,9 @@ module LonelyPlanet
       program :description, 'Pages'
       command :render do |c|
         c.syntax = 'lonely_planet render [options]'
-        c.summary = ''
-        c.description = ''
-        c.example 'description', 'command example'
+        c.summary = 'Given a list of destinations and how the are organize this'\
+                    'programs generates information pages for them'
+        c.description = 'render html files for given destinations'
         c.option '-t', '--taxonomy FILE', 'The location of the taxonomy file'
         c.option '-d', '--destinations FILE', 'The location of the destinations file'
         c.option '-o', '--output PATH', 'Where to write the result pages'

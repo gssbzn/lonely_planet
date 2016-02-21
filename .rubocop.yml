@@ -4,3 +4,6 @@ AllCops:
   TargetRubyVersion: 2.3
   Include:
     - '**/Rakefile'
+  Exclude:
+    - 'bin/lonely_planet'
+    - 'spec/**/*.rb'

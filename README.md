@@ -7,7 +7,19 @@ to plain HTML pages.
 
 ## Installation
 
+Clone the repository and setup.
+
+```sh
+$ git clone https://github.com/gssbzn/lonely_planet.git
+$ cd lonely_planet
+$ ./bin/setup
+```
+
 ## Usage
+
+```sh
+$ ./bin/lonely_planet
+```
 
 ## Contributing
 
