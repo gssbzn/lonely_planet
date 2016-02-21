@@ -1,6 +1,6 @@
 # Lonely Planet
 [![Build Status](https://travis-ci.org/gssbzn/lonely_planet.svg?branch=master)](https://travis-ci.org/gssbzn/lonely_planet)
-[![Coverage Status](https://coveralls.io/repos/gssbzn/lonely_planet/badge.svg?branch=master&service=github)](https://coveralls.io/github/gssbzn/lonely_planet?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/gssbzn/lonely_planet/badge.svg?branch=master)](https://coveralls.io/github/gssbzn/lonely_planet?branch=master)
 
 A simple program to convert XML files with destinations information
 to plain HTML pages.
