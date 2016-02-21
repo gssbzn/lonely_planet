@@ -5,6 +5,13 @@
 A simple program to convert XML files with destinations information
 to plain HTML pages.
 
+## Requirements
+
+Please consider having Ruby 2.3.0 on your system,
+a `.ruby-version` file is provided in case you mange
+your gems with [rbenv](https://github.com/rbenv/rbenv#installation)
+or [rvm](http://rvm.io/rvm/install)
+
 ## Installation
 
 Clone the repository and setup.
@@ -18,8 +25,25 @@ $ ./bin/setup
 ## Usage
 
 ```sh
-$ ./bin/lonely_planet
+$ ./bin/lonely_planet render
 ```
+
+### Command options
+
+- Taxonomy file location, where to look for the taxonomy XML file
+    ```sh
+    ./bin/lonely_planet render -t ~/some/path/taxonomy.xml
+    ```
+- Destinations file location, where to look for the destinations XML file
+    ```sh
+    ./bin/lonely_planet render -d ~/some/path/destinations.xml
+    ```
+- Output folder, where the resulting HTML file will be written to
+    ```sh
+    ./bin/lonely_planet render -o ~/some/path/
+    ```
+
+This options can be combined as you see fit.
 
 ## Contributing
 
