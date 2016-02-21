@@ -32,18 +32,18 @@ $ ./bin/lonely_planet render
 
 - Taxonomy file location, where to look for the taxonomy XML file
     ```sh
-    ./bin/lonely_planet render -t ~/some/path/taxonomy.xml
+    ./bin/lonely_planet render -t /some/path/taxonomy.xml
     ```
 - Destinations file location, where to look for the destinations XML file
     ```sh
-    ./bin/lonely_planet render -d ~/some/path/destinations.xml
+    ./bin/lonely_planet render -d /some/path/destinations.xml
     ```
 - Output folder, where the resulting HTML file will be written to
     ```sh
-    ./bin/lonely_planet render -o ~/some/path/
+    ./bin/lonely_planet render -o /some/path/
     ```
 
-This options can be combined as you see fit.
+These options can be combined as you see fit.
 
 ## Contributing
 
