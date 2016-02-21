@@ -13,6 +13,10 @@ module LonelyPlanet
       def title
         @node['title']
       end
+
+      def ascii_title
+        @node['ascii_title']
+      end
     end
   end
 end

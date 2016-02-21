@@ -18,8 +18,14 @@
         <div id="main">
           <div class="block">
             <%= render(LonelyPlanet.templates + '/navigation.html.erb') %>
-            <%= render(LonelyPlanet.templates + '/content.html.erb',
-                       { title: 'History', content: @destination.history }) %>
+            <% if @destination.history? %>
+              <%= render(LonelyPlanet.templates + '/content.html.erb',
+                         { title: 'History', content: @destination.history }) %>
+            <% end %>
+            <% if @destination.introduction? %>
+              <%= render(LonelyPlanet.templates + '/content.html.erb',
+                         { title: 'Introduction', content: @destination.introduction }) %>
+            <% end %>
           </div>
         </div>
       </div>

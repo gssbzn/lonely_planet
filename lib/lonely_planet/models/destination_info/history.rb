@@ -18,9 +18,17 @@ module LonelyPlanet
                                         HISTORY)
         end
 
+        def history?
+          history&.any?
+        end
+
         def history_overview
           @history_overview ||= collect_info_for(@node,
                                                  OVERVIEW)
+        end
+
+        def history_overview?
+          history_overview&.any?
         end
       end
     end

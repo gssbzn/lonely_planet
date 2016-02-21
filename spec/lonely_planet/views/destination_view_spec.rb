@@ -5,7 +5,7 @@ require 'spec_helper'
 describe LonelyPlanet::Views::DestinationView do
   describe '#write' do
     let(:destination) do
-      instance_double('LonelyPlanet::Models::Destination', title: 'destiny')
+      instance_double('LonelyPlanet::Models::Destination', ascii_title: 'destiny')
     end
     let(:view) do
       LonelyPlanet::Views::DestinationView.new destination,

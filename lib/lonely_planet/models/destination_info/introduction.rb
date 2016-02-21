@@ -16,6 +16,9 @@ module LonelyPlanet
           @introduction ||= collect_info_for(@node,
                                              SCOPE)
         end
+        def introduction?
+          introduction&.any?
+        end
       end
     end
   end
