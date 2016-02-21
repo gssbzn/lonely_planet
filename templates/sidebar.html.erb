@@ -1,0 +1,18 @@
+<div id="sidebar">
+  <div class="block">
+    <h3>Navigation</h3>
+    <div class="content">
+      <div class="inner">
+        <ul class="navigation">
+          <% @navigation.children.each_with_index do |nav, i| %>
+            <li class="<%= 'first' if i==0 %>">
+              <a href="<%= "#{nav.parameterize}.html" %>">
+                <%= nav %>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

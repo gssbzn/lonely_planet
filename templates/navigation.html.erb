@@ -1,0 +1,15 @@
+<div class="secondary-navigation">
+  <ul>
+    <% if @navigation.parent %>
+      <li class="first">
+        <a href="<%= "#{@navigation.parent.parameterize}.html" %>">
+          <%= @navigation.parent %>
+        </a>
+      </li>
+    <% end %>
+    <li class="<%= 'first' unless @navigation.parent %>">
+      <a href="#"><%= @destination.title %></a>
+    </li>
+  </ul>
+  <div class="clear"></div>
+</div>
