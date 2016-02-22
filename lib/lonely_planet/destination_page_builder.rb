@@ -12,17 +12,17 @@ module LonelyPlanet
     end
 
     def build
-      proccess_taxonomies
-      proccess_destinations
+      process_taxonomies
+      process_destinations
     end
 
     private
 
-    def proccess_taxonomies
+    def process_taxonomies
       @taxonomies = Models::Taxonomies.new xml(file(@taxonomy))
     end
 
-    def proccess_destinations
+    def process_destinations
       reader.each do |node|
         next unless node.name == 'destination' &&
                     node.node_type == Nokogiri::XML::Reader::TYPE_ELEMENT
