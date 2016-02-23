@@ -23,7 +23,8 @@ module LonelyPlanet
       end
 
       def file_name
-        "#{@destination.ascii_title.parameterize}.html"
+        return "#{@destination.title_ascii.parameterize}.html" if @destination.title_ascii
+        "#{@destination.title.parameterize}.html"
       end
     end
   end

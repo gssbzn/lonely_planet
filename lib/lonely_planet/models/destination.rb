@@ -14,8 +14,8 @@ module LonelyPlanet
         @node['title']
       end
 
-      def ascii_title
-        @node['ascii_title']
+      def title_ascii
+        @node['title-ascii']
       end
     end
   end

@@ -33,7 +33,7 @@ $ ./bin/lonely_planet render
 - Taxonomy file location, where to look for the taxonomy XML file
 
     ```sh
-    ./bin/lonely_planet render -t /some/path/taxonomy.xml
+    ./bin/lonely_planet render -y /some/path/taxonomy.xml
     ```
 - Destinations file location, where to look for the destinations XML file
 

@@ -12,6 +12,9 @@ describe LonelyPlanet::Models::Destination do
   describe '#title' do
     it { expect(destination.title).to eq 'South Africa' }
   end
+  describe '#title_ascii' do
+    it { expect(destination.title_ascii).to eq 'South Africa' }
+  end
   describe 'Concerns' do
 
     describe '::History' do

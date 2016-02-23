@@ -20,7 +20,7 @@ module LonelyPlanet
         c.summary = 'Given a list of destinations and how the are organize this'\
                     'programs generates information pages for them'
         c.description = 'render html files for given destinations'
-        c.option '-t', '--taxonomy FILE', 'The location of the taxonomy file'
+        c.option '-y', '--taxonomy FILE', 'The location of the taxonomy file'
         c.option '-d', '--destinations FILE', 'The location of the destinations file'
         c.option '-o', '--output PATH', 'Where to write the result pages'
         c.action do |_args, options|
